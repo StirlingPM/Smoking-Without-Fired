@@ -18,26 +18,34 @@ public class PlayerSmoker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if(GameManager.gameState == CurrentGameState.Game)
         {
-            drag = 1;
-            cigarette.transform.localPosition = cigStartPos;
-        }
-
-        if (Input.GetMouseButton(0))
-        {
-            if (drag > 0)
+            if (Input.GetMouseButtonDown(0))
             {
-                cigarette.transform.Translate(Vector3.down * .20f * Time.deltaTime);
-                drag -= Time.deltaTime;
-                print("smoking");
-                points += Time.deltaTime;
-                cigarette.SetActive(true);
+                drag = 1;
+                cigarette.transform.localPosition = cigStartPos;
+            }
+
+            if (Input.GetMouseButton(0))
+            {
+                GameManager.isSmoking = true;
+                if (drag > 0)
+                {
+                    cigarette.transform.Translate(Vector3.down * .40f * Time.deltaTime);
+                    drag -= Time.deltaTime;
+                    print("smoking");
+                    points += Time.deltaTime;
+                    cigarette.SetActive(true);
+                    GameManager.scoreText.text = string.Format("{0:0.##}", points);
+                }
+            }
+            else
+            {
+                GameManager.isSmoking = false;
+
+                cigarette.SetActive(false);
             }
         }
-        else
-        {
-            cigarette.SetActive(false);
-        }
+      
     }
 }

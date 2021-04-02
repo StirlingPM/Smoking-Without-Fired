@@ -3,7 +3,62 @@ guid: 86947481bc87a6347a6d33c2ce491666
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chair_arms
+    second: {fileID: 2100000, guid: e3dd4b79264a64141a4d9780ca0c88ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chair_back
+    second: {fileID: 2100000, guid: 8b417bb2f20f3894682e4e30df536641, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chair_legs
+    second: {fileID: 2100000, guid: a68949183063dfa4c82a641e4720bf63, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chair_seat
+    second: {fileID: 2100000, guid: 5c21c5c474657654285ba3eb87c5167c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: computer_monitor
+    second: {fileID: 2100000, guid: 4a4d1bb657b630f409dd2fdfac1bdf9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: desk_bottom
+    second: {fileID: 2100000, guid: aed8838649dd33b4ab11f3bb6e668b6d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: desk_legs
+    second: {fileID: 2100000, guid: 5d84439e00e86b94884c6226ae29866b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: desk_top
+    second: {fileID: 2100000, guid: ebdee0b8b91a27c4388a7431f5575857, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert11
+    second: {fileID: 2100000, guid: d16dbcd22cedc3e4e9a4ae8d40ba95c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert12
+    second: {fileID: 2100000, guid: 5c63ea0966af85247b2aca8a08151130, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: monitor_stand
+    second: {fileID: 2100000, guid: cd15f2a717ff8be4397520ac25da55b1, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -85,7 +140,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.19999999
+    globalScale: 20
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
